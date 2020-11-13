@@ -32,3 +32,26 @@
 		grid-template-rows: 50% 50%;
 	}
 	
+	.even-personal-contact-child {
+		 
+	}
+	
+	.cv-body {
+		display: grid;
+		grid-template-columns: 70% 30%;
+	}
+	
+	.cv-body-main {
+		grid-column-start: 1;
+	}
+	
+	.cv-body-extra {
+		grid-column-start: 2;
+	}
+	
+	.cv-item {
+		display: grid;
+	}
+	.cv-item-heading {
+		display: grid;
+	}
