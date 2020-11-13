@@ -3,13 +3,32 @@
 	}
 
 	.container {
-		width: 21cm;
+		width: 793px;
+		height: 793px;
 		margin: 27mm 16mm 27mm 16mm;
-		align-self: center;
-		/* display: flex; */
 	}
 	
 	.job-title {
-		color: #008cff;
+		/* color: #008cff; */
+		color: #d21404;
+	}
+	
+	.cv-header {
+		display: grid;
+		grid-template-columns: 80% 20%;
+	}
+	
+	.personal-info {
+		grid-column-start: 1;
+	}
+	
+	.avatar {
+		grid-column-start: 2;
+	}
+	
+	.personal-contact {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 50% 50%;
 	}
 	
