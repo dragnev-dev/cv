@@ -1,0 +1,15 @@
+	body {
+	  font-family: Sans-Serif;
+	}
+
+	.container {
+		width: 21cm;
+		margin: 27mm 16mm 27mm 16mm;
+		align-self: center;
+		/* display: flex; */
+	}
+	
+	.job-title {
+		color: #008cff;
+	}
+	
