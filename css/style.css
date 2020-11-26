@@ -115,7 +115,7 @@ hr.cv-item-subitem-separator {
 	border-right: 1px dashed #fff;
 }
 
-/*.cv-item-work-experience,*/ .cv-item-life-philosophy, .cv-item-skills, /*.cv-item-education,*/ .cv-item-language, .cv-item-volunteering {
+/*.cv-item-work-experience,*/ .cv-item-life-philosophy, .cv-item-skills, /*.cv-item-education,*/ /*.cv-item-language,*/ .cv-item-volunteering {
 	padding-bottom: 10px;
 }
 
@@ -173,6 +173,7 @@ hr.cv-item-subitem-separator {
 .cv-item-language {
 	display: grid;
 	grid-template-columns: max-content auto;
+	grid-template-rows: 50% 50%;
 }
 
 .cv-item-language-title, .cv-item-language-level-label {
@@ -191,8 +192,12 @@ hr.cv-item-subitem-separator {
 
 .cv-item-language-level-dots {
 	grid-column-start: 2;
-	grid-row-start: 1;
-	grid-row-end: span 1;
+	grid-row: 1 / -1;
+	justify-self: end;
+	/* grid-row: 1/-1;
+	justify-content: center; */
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 .dot, .dot-full {
@@ -201,6 +206,15 @@ hr.cv-item-subitem-separator {
 	background-color: #000;
 	border-radius: 50%;
 	display: inline-block;
+}
+
+/* ty https://stackoverflow.com/questions/5948049/equivalent-of-width-moz-available-in-google-chrome/8075897 */
+.cv-item-language + hr {
+	width: -moz-available;          /* For Mozzila */
+	width: -webkit-fill-available;  /* For Chrome */
+	width: stretch;                 /* Unprefixed */
+	margin-top: 11px;
+	margin-bottom: 11px;
 }
 
 /* Accent color */
