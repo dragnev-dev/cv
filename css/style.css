@@ -12,11 +12,13 @@ body {
 /* Container */
 
 .container {
-	margin-top: 49px;
+	margin-top: 33px;
 	width: 793px;
-	height: 793px;
+	height: 1122px;
 	padding: 16mm 21mm 16mm 21mm;
 	background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Header */
