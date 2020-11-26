@@ -1,57 +1,185 @@
-	body {
-	  font-family: Sans-Serif;
-	}
+/* Body */
 
-	.container {
-		width: 793px;
-		height: 793px;
-		margin: 27mm 16mm 27mm 16mm;
-	}
-	
-	.job-title {
-		/* color: #008cff; */
-		color: #d21404;
-	}
-	
-	.cv-header {
-		display: grid;
-		grid-template-columns: 80% 20%;
-	}
-	
-	.personal-info {
-		grid-column-start: 1;
-	}
-	
-	.avatar {
-		grid-column-start: 2;
-	}
-	
-	.personal-contact {
-		display: grid;
-		grid-template-columns: 50% 50%;
-		grid-template-rows: 50% 50%;
-	}
-	
-	.even-personal-contact-child {
-		 
-	}
-	
-	.cv-body {
-		display: grid;
-		grid-template-columns: 70% 30%;
-	}
-	
-	.cv-body-main {
-		grid-column-start: 1;
-	}
-	
-	.cv-body-extra {
-		grid-column-start: 2;
-	}
-	
-	.cv-item {
-		display: grid;
-	}
-	.cv-item-heading {
-		display: grid;
-	}
+body {
+	font-family: Sans-Serif;
+	/* display: block;
+	margin-left: auto;
+	margin-right: auto; */
+	background-color: #2a2a2e;
+}
+
+/* Container */
+
+.container {
+	margin-top: 40px;
+	width: 793px;
+	height: 793px;
+	padding: 23mm 21mm 23mm 21mm;
+	background-color: #fff;
+}
+
+/* Header */
+
+.cv-header {
+	display: grid;
+	grid-template-columns: 80% 20%;
+}
+
+.personal-info {
+	grid-column-start: 1;
+}
+
+.personal-info-name {
+	font-size: 40px;
+	font-weight: bold;
+	padding-bottom: 4px;
+}
+
+.personal-info-title {
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+.personal-info-contact {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+	font-size: 12px;
+	font-weight: bold;
+	grid-gap: 6px;
+}
+
+/* [class^="icon"] */
+.fas, .far {
+	/* width: 15px;
+	height: 15px;
+	position: relative;
+	top: 15px; */
+	margin-right: 4px;
+}
+
+.cv-header .fas {
+	margin-right: 9px;
+}
+
+/* I don't even know why this correction is needed */
+.even-personal-info-contact-child .fas {
+	margin-right: 7px;
+}
+
+.avatar {
+	grid-column-start: 2;
+}
+
+/* CV-body grid */
+.cv-body {
+	display: grid;
+	grid-gap: 0px 45px;
+	grid-template-columns: 70% 30%;
+	padding-top: 42px;
+}
+
+.cv-body-main {
+	grid-column-start: 1;
+}
+
+.cv-body-extra {
+	grid-column-start: 2;
+}
+
+/* CV-item */
+
+.cv-item {
+	display: grid;
+	padding-bottom: 15px;
+}
+.cv-item-heading {
+	display: grid;
+	padding-top: 12px;
+	margin-bottom: 12px;
+	font-size: 26px;
+	font-weight: bold;
+    border-bottom: 3px solid;
+}
+
+hr.cv-item-subitem-separator {
+	border-top: 1px dashed #dcdcdc;
+	border-bottom: 1px dashed #fff;
+	border-left: 1px dashed #fff;
+	border-right: 1px dashed #fff;
+}
+
+.cv-item-work-experience, .cv-item-life-philosophy, .cv-item-skills, .cv-item-education, .cv-item-language, .cv-item-volunteering {
+	padding-bottom: 10px;
+}
+
+/* Work Experience */
+
+.cv-item-work-experience-title {
+	font-size: 21px;
+}
+
+.cv-item-work-experience-body {
+	color: #384347;
+}
+
+/* Life Philosophy */
+
+.cv-item-life-philosophy-quote {
+	font-style: italic;
+	text-align: justify;
+}
+
+.cv-item-life-philosophy-source {
+	text-align: right;
+}
+
+/* Languages */
+
+.cv-item-language {
+	display: grid;
+}
+
+.cv-item-language-title, .cv-item-language-level-label {
+	grid-column-start: 1;
+}
+
+.cv-item-language-level-label {
+	color: #747474;
+}
+
+.cv-item-language-level-dots {
+	grid-column-start: 2;
+	grid-row-start: 1;
+	grid-row-end: span 1;
+}
+
+.dot, .dot-full {
+	height: 15px;
+	width: 15px;
+	background-color: #000;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+/* Accent color */
+
+.personal-info-title, .cv-item-work-experience-workplace, .cv-item-life-philosophy-quote, .cv-item-education-subheading {
+	/* color: #008cff; */
+	color: #d21404;
+}
+
+.dot-full {
+	background-color: #d21404;
+}
+
+.fas, .far {
+	color: #d21404;
+}
+
+/* Capitalizations */
+
+.personal-info-name, .cv-item-heading {
+	text-transform: uppercase;
+}
