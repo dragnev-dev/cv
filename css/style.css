@@ -1,12 +1,13 @@
 /* Body */
 
 body {
-	font: message-box;
-	/* font-family: Sans-Serif; */
+	/* font: ;  */
+	font-family: sans-serif;
 	/* display: block;
 	margin-left: auto;
 	margin-right: auto; */
 	background-color: #2a2a2e;
+	font-size: 12px;
 }
 
 /* Container */
@@ -15,10 +16,10 @@ body {
 	margin-top: 33px;
 	width: 793px;
 	height: 1122px;
-	padding: 72px 64px;
+    padding: 76px 76px;
 	background-color: #fff;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 /* Header */
@@ -26,6 +27,7 @@ body {
 .cv-header {
 	display: grid;
 	grid-template-columns: 80% 20%;
+    padding-bottom: 28px;
 }
 
 .personal-info {
@@ -33,26 +35,51 @@ body {
 }
 
 .personal-info-name {
-	line-height: 35px;
-	font-size: 35.5px;
-    font-family: sans-serif;
-    font-weight: bold;
+	/* line-height: 35px;
+    font-size: 42px;
 	font-weight: bold;
+	padding-bottom: 9px; */
+    padding-top: 6px;
+    text-transform: uppercase;
+    line-height: 37px;
+    font-size: 43px;
+    font-weight: bold;
+    padding-bottom: 7.5px;
 }
 
 .personal-info-title {
-	font-size: 20px;
+    font-size: 21.5px;
 	font-weight: bold;
-	padding-bottom: 16px;
+    padding-bottom: 20.5px;
 }
 
 .personal-info-contact {
 	display: grid;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: 50% 50%;
-	font-size: 11px;
+	font-size: 12px;
 	font-weight: bold;
-	grid-gap: 6px;
+    grid-gap: 6px;
+}
+
+.avatar-container {
+    /* margin-left: +5px; */
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.avatar {
+	/* display: inline;
+	margin: 0 auto; */
+	height: 100%;
+	/* width: auto; */
+}
+
+.avatar-landscape {
+	margin-left: -25%;
 }
 
 /* [class^="icon"] */
@@ -65,7 +92,7 @@ body {
 }
 
 .cv-header .fas {
-	margin-right: 9px;
+    margin-right: 7px;
 }
 
 /* I don't even know why this correction is needed */
@@ -80,9 +107,8 @@ body {
 /* CV-body grid */
 .cv-body {
 	display: grid;
-	grid-gap: 0px 45px;
-	/* не мога да му хвана спатиите на това заради gap-а горе */
-	grid-template-columns: 60.4% 33.9%;
+    grid-gap: 5%;
+    grid-template-columns: 57% 38%;
 }
 
 .cv-body-main {
@@ -101,11 +127,11 @@ body {
 }
 .cv-item-heading {
 	display: grid;
-	padding-top: 12px;
-	margin-bottom: 12px;
-	font-size: 26px;
+    margin-bottom: 14px;
+    font-size: 27px;
 	font-weight: bold;
-    border-bottom: 3px solid;
+    padding-bottom: 1px;
+    border-bottom: 3.3px solid;
 }
 
 hr.cv-item-subitem-separator {
@@ -120,14 +146,14 @@ hr.cv-item-subitem-separator {
 }
 
 .cv-item-work-experience {
-	padding-bottom: 6px;
+    padding-top: 2px;
+    padding-bottom: 8px;
 }
 
 /* Work Experience */
 
 .cv-item-work-experience-title {
-	font-family: sans-serif;
-	font-size: 19px;
+    font-size: 20px;
 }
 
 .cv-item-work-experience-position {
@@ -154,7 +180,6 @@ hr.cv-item-subitem-separator {
 /* Education */
 
 .cv-item-education-heading {
-	font-family: sans-serif;
 	font-size: 19px;
 }
 
@@ -182,7 +207,6 @@ hr.cv-item-subitem-separator {
 
 .cv-item-language-title {
 	font-size: 12.65px;
-	font-family: sans-serif;
 	font-weight: bold;
 }
 
@@ -234,6 +258,6 @@ hr.cv-item-subitem-separator {
 
 /* Capitalizations */
 
-.personal-info-name, .cv-item-heading {
+/* .personal-info-name, */.cv-item-heading { 
 	text-transform: uppercase;
 }
