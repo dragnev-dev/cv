@@ -151,11 +151,10 @@ th a, td a {
 /* CV-item */
 
 .cv-item {
-	display: grid;
 	padding-bottom: 15px;
 }
+
 .cv-item-heading {
-	display: grid;
     margin-bottom: 14px;
     font-size: 27px;
 	font-weight: bold;
@@ -176,13 +175,10 @@ hr.cv-item-subitem-separator {
     font-size: 20px;
 }
 
-.cv-item-work-experience-position, .cv-item-education-subheading {
+.cv-item-work-experience-position, .cv-item-education-subheading, .cv-item-skills-subitem-heading {
 	font-weight: bold;
 	font-size: 14px;
-}
-
-.cv-item-work-experience-position {
-    padding-bottom: 4px;
+	padding-bottom: 5px;
 }
 
 .cv-item-work-experience-extras {
@@ -207,6 +203,38 @@ p {
 	white-space: pre-wrap;
 }
 
+/* Skills */
+
+.cv-item-skills{
+	display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 3px;
+}
+
+.cv-item-skills-subitem {
+	grid-column-start: 1;
+    padding-bottom: 12px;
+}
+
+.cv-item-skills-even-subitem {
+	grid-column-start: 2;
+}
+
+.cv-item-skills .cv-item-subitem-separator {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	width: 100%;
+    padding-bottom: 6px;
+}
+
+.pill, .pill-full {
+	height: 6px;
+    width: 20px;
+    background-color: #000;
+    border-radius: 25%;
+    display: inline-block;
+}
+
 /* Life Philosophy */
 
 .cv-item-life-philosophy-quote {
@@ -220,7 +248,7 @@ p {
 }
 
 .cv-item-life-philosophy {
-	padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 blockquote {
@@ -234,7 +262,7 @@ blockquote {
 }
 
 .cv-item-education hr {
-	margin-top: 14px;
+	margin-top: 9px;
     margin-bottom: 14px;
 }
 
@@ -284,6 +312,25 @@ blockquote {
 	margin-bottom: 11px;
 }
 
+/* Achievements */
+
+.cv-item-achievement {
+	display: grid;
+    grid-template-columns: 14% 86%;
+    padding-top: 5px;
+}
+
+.cv-item-achievement-icon {
+	grid-column-start: 1;
+	font-size: 25px;
+}
+
+.cv-item-achievement-title {
+    font-size: 15px;
+	font-weight: bold;
+	grid-column-start: 2;
+}
+
 /* CV Footer */
 
 .cv-footer {
@@ -310,7 +357,7 @@ blockquote {
 	color: #d21404;
 }
 
-.dot-full {
+.dot-full, .pill-full {
 	background-color: #d21404;
 }
 
