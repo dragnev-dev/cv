@@ -62,6 +62,16 @@ body {
     grid-gap: 6px;
 }
 
+a {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .avatar-container {
     /* margin-left: +5px; */
     width: 150px;
