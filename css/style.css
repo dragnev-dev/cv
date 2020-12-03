@@ -169,10 +169,16 @@ hr.cv-item-subitem-separator {
 .cv-item-work-experience-position {
 	font-weight: bold;
 	font-size: 14px;
+    padding-bottom: 4px;
 }
 
-.cv-item-work-experience-body {
-	color: #384347;
+.cv-item-work-experience-extras {
+    padding-bottom: 4px;
+}
+
+ul {
+	margin: 0px;
+    padding-left: 14px;
 }
 
 /* Life Philosophy */
@@ -218,6 +224,7 @@ hr.cv-item-subitem-separator {
 .cv-item-language-title {
 	font-size: 12.65px;
 	font-weight: bold;
+    padding-bottom: 9px;
 }
 
 .cv-item-language-level-label {
@@ -228,21 +235,18 @@ hr.cv-item-subitem-separator {
 	grid-column-start: 2;
 	grid-row: 1 / -1;
 	justify-self: end;
-	/* grid-row: 1/-1;
-	justify-content: center; */
 	margin-top: auto;
 	margin-bottom: auto;
 }
 
 .dot, .dot-full {
-	height: 15px;
-	width: 15px;
+    height: 16px;
+    width: 16px;
 	background-color: #000;
 	border-radius: 50%;
 	display: inline-block;
 }
 
-/* ty https://stackoverflow.com/questions/5948049/equivalent-of-width-moz-available-in-google-chrome/8075897 */
 .cv-item-language + hr {
 	width: -moz-available;          /* For Mozzila */
 	width: -webkit-fill-available;  /* For Chrome */
