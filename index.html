@@ -2,23 +2,25 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Example CV</title>
-  <meta name="author" content="">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link href="css/style.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/f9584fea2e.js" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<title>Example CV</title>
+	<meta name="author" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="css/style.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/f9584fea2e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 	<div class="container">
 		<div class="cv-header">
 			<div class="personal-info">
-				<div class="personal-info-name">Hristo Botev</div>
+				<div class="personal-info-name">
+					<h1>Hristo Botev</h1>
+				</div>
 				<div class="personal-info-title">One who falls in fight for Freedom doesn't die</div>
-				<div class="personal-info-contact">
+				<!-- <div class="personal-info-contact">
 					<a href="tel:+359999999999" target="_blank">
 						<div>
 							<i class="fas fa-phone fa-rotate-90"></i><span>+359999999999</span>
@@ -34,7 +36,29 @@
 							<i class="fas fa-link"></i><span>https://botev.com</span>
 						</div>
 					</a>
-				</div>				
+				</div> -->
+				<table style="width:100%">
+					<tr>
+						<th>
+							<a href="tel:+359999999999" target="_blank">
+								<i class="fas fa-phone fa-rotate-90"></i><span>+359999999999</span>
+							</a>
+						</th>
+						<th>
+							<a href="mailto:hristo@botev.com" target="_blank">
+								<i class="fas fa-at"></i><span>hristo@botev.com</span>
+							</a>
+						</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="https://botev.com" target="_blank">
+								<i class="fas fa-link"></i><span>https://botev.com</span>
+							</a>
+						</td>
+						<td></td>
+					</tr>
+				</table>
 			</div>
 			<div class="avatar-container">
 				<img class="avatar" src="images/sq_avatar.png">
@@ -55,7 +79,8 @@
 								The Botev Cheta
 							</div>
 							<div class="cv-item-work-experience-extras">
-								<i class="far fa-calendar-alt"></i>1876-1876 <!-- 1876-∞ -->
+								<i class="far fa-calendar-alt"></i>1876-1876
+								<!-- 1876-∞ -->
 							</div>
 							<div class="cv-item-work-experience-body">
 								<ul>
@@ -73,17 +98,17 @@
 					<div class="cv-item-work-experience">
 						<div class="cv-item-work-experience">
 							<div class="cv-item-work-experience-title">
-								Poet 
+								Poet
 							</div>
 							<div class="cv-item-work-experience-position">
 								Several newspapers
 							</div>
 							<div class="cv-item-work-experience-extras">
-								<i class="far fa-calendar-alt"></i>1868-1876 
+								<i class="far fa-calendar-alt"></i>1868-1876
 							</div>
 							<div class="cv-item-work-experience-body">
-								Wrote poems inspired by Love, Hate, and the life abroad.
-								Published in newspapers like „Знаме“ and „Дума на българските емигранти“.
+								<p class="multiline">Wrote poems inspired by Love, Hate, and the life abroad.
+Published in newspapers like „Знаме“ and „Дума на българските емигранти“.</p>
 							</div>
 						</div>
 						<hr class="cv-item-subitem-separator">
@@ -94,11 +119,13 @@
 								Teacher and educator
 							</div>
 							<div class="cv-item-work-experience-extras">
-								<i class="far fa-calendar-alt"></i>1868-1868 
+								<i class="far fa-calendar-alt"></i>1868-1868
 							</div>
 							<div class="cv-item-work-experience-body">
-								Took over my father's place as a teacher when he was sick. Later tutored to make a living abroad.
-								Translated books from Russian and Greek.
+								<p>
+									Took over my father's place as a teacher when he was sick. Later tutored to make a
+									living abroad.Translated books from Russian and Greek.
+								</p>
 							</div>
 						</div>
 					</div>
@@ -109,7 +136,11 @@
 					</div>
 					<div class="cv-item-life-philosophy">
 						<div class="cv-item-life-philosophy-quote">
-							„As the eye is used for perceiving light, the ear for the sound, the mind for understanding even the simplest forms of truth - so the sciences, education and development are necessary for a nation to reach up to a certain point in its welfare.“
+							<blockquote>
+								„As the eye is used for perceiving light, the ear for the sound, the mind for
+								understanding even the simplest forms of truth - so the sciences, education and
+								development are necessary for a nation to reach up to a certain point in its welfare.“
+							</blockquote>
 						</div>
 						<div class="cv-item-life-philosophy-source">
 							Botev
@@ -138,7 +169,7 @@
 								Karlovo School
 							</div>
 							<div class="cv-item-education-period">
-								
+
 							</div>
 							<hr class="cv-item-subitem-separator">
 						</div>
@@ -150,7 +181,7 @@
 								Second Odessa Gymnasium
 							</div>
 							<div class="cv-item-education-period">
-								
+
 							</div>
 							<hr class="cv-item-subitem-separator">
 						</div>
@@ -162,7 +193,7 @@
 								Odessa University
 							</div>
 							<div class="cv-item-education-period">
-								
+
 							</div>
 							<hr class="cv-item-subitem-separator">
 						</div>
@@ -174,10 +205,10 @@
 								Bucharest University
 							</div>
 							<div class="cv-item-education-period">
-								
+
 							</div>
 						</div>
-					</div>				
+					</div>
 				</div>
 				<div class="cv-item">
 					<div class="cv-item-heading">
@@ -274,12 +305,13 @@
 		</div>
 	</div>
 	<div class="cv-footer">
-		<a href="https://enhancv.com/static/62b4fedcd6f2ea443ee6c152de7ccc47/a152c/steve-jobs-resume.jpg" target="_blank">
+		<a href="https://enhancv.com/static/62b4fedcd6f2ea443ee6c152de7ccc47/a152c/steve-jobs-resume.jpg"
+			target="_blank">
 			Original design "Steve Jobs" example on www.enhancv.com
 		</a>
 	</div>
 
-<!-- Настане вечер – месец изгрее,  звезди обсипят свода небесен;
+	<!-- Настане вечер – месец изгрее,  звезди обсипят свода небесен;
     гора зашуми, вятър повее, –  Балканът пее хайдушка песен! -->
 
 </body>

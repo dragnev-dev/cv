@@ -30,13 +30,14 @@ body {
 	grid-column-start: 1;
 }
 
-.personal-info-name {
+.personal-info-name h1 {
     padding-top: 6px;
     text-transform: uppercase;
     line-height: 37px;
     font-size: 43px;
     font-weight: bold;
-    padding-bottom: 7.5px;
+	padding-bottom: 7.5px;
+	margin: 0;
 }
 
 .personal-info-title {
@@ -45,13 +46,13 @@ body {
     padding-bottom: 20.5px;
 }
 
-.personal-info-contact {
+/* .personal-info-contact {
 	display: grid;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: 50% 50%;
 	font-weight: bold;
     grid-gap: 6px;
-}
+} */
 
 a {
     color: inherit;
@@ -95,6 +96,43 @@ a:hover {
 	grid-column-start: 2;
 }
 
+/* Make table look like personal-info-contact */
+
+table {
+	border-collapse: collapse;
+    font-weight: bold;
+}
+
+table td {
+	border: 6px transparent solid; 
+}
+
+table tr:first-child td {
+	border-top: 0;
+}
+
+table tr td:first-child {
+	border-left: 0;
+}
+
+table tr:last-child td {
+	border-bottom: 0;
+}
+
+table tr td:last-child {
+	border-right: 0;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    text-align: inherit;
+}
+
+th a, td a {
+    display: block;
+}
+
 /* CV-body grid */
 .cv-body {
 	display: grid;
@@ -132,15 +170,6 @@ hr.cv-item-subitem-separator {
 	border-right: 1px dashed #fff;
 }
 
-.cv-item-life-philosophy, .cv-item-skills, /*.cv-item-education,*/ /*.cv-item-language,*/ .cv-item-volunteering {
-	padding-bottom: 10px;
-}
-
-.cv-item-work-experience {
-    padding-top: 2px;
-    padding-bottom: 8px;
-}
-
 /* Work Experience */
 
 .cv-item-work-experience-title {
@@ -162,7 +191,20 @@ hr.cv-item-subitem-separator {
 
 ul {
 	margin: 0px;
-    padding-left: 14px;
+    padding-left: 15px;
+}
+
+p {
+	margin: 0;
+}
+
+.cv-item-work-experience {
+    padding-top: 2px;
+    padding-bottom: 8px;
+}
+
+.multiline {
+	white-space: pre-wrap;
 }
 
 /* Life Philosophy */
@@ -175,6 +217,14 @@ ul {
 
 .cv-item-life-philosophy-source {
 	text-align: right;
+}
+
+.cv-item-life-philosophy {
+	padding-bottom: 10px;
+}
+
+blockquote {
+	margin: 0;
 }
 
 /* Education */
