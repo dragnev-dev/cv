@@ -251,6 +251,23 @@ hr.cv-item-subitem-separator {
 	margin-bottom: 11px;
 }
 
+/* CV Footer */
+
+.cv-footer {
+	/* 76px would be better for consistency but this is what I chose */
+    height: 63px;
+    width: 793px;
+    padding: 0px 76px 0px 63px;
+    margin-top: -63px;
+	text-align: end;
+}
+
+/* Secondary color */
+
+.cv-item-work-experience-body, .cv-footer, .cv-item-life-philosophy-source {
+	color: #384347;
+}
+
 /* Accent color */
 
 .personal-info-title, .cv-item-work-experience-position, .cv-item-life-philosophy-quote, .cv-item-education-subheading {
