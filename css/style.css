@@ -222,7 +222,7 @@ p {
 
 .cv-item-skills .cv-item-subitem-separator {
 	grid-column-start: 1;
-	grid-column-end: 2;
+    grid-column-end: -1;
 	width: 100%;
     padding-bottom: 6px;
 }
