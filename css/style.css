@@ -171,11 +171,11 @@ hr.cv-item-subitem-separator {
 
 /* Work Experience */
 
-.cv-item-work-experience-title {
+.cv-item-work-experience-position {
     font-size: 20px;
 }
 
-.cv-item-work-experience-position, .cv-item-education-subheading, .cv-item-skills-subitem-heading {
+.cv-item-work-experience-workplace, .cv-item-education-subheading, .cv-item-skills-subitem-heading {
 	font-weight: bold;
 	font-size: 14px;
 	padding-bottom: 5px;
@@ -274,11 +274,11 @@ blockquote {
 	grid-template-rows: 50% 50%;
 }
 
-.cv-item-language-title, .cv-item-language-level-label {
+.cv-item-language-heading, .cv-item-language-level-label {
 	grid-column-start: 1;
 }
 
-.cv-item-language-title {
+.cv-item-language-heading {
 	font-size: 12.65px;
 	font-weight: bold;
     padding-bottom: 9px;
@@ -325,7 +325,7 @@ blockquote {
 	font-size: 25px;
 }
 
-.cv-item-achievement-title {
+.cv-item-achievement-heading {
     font-size: 15px;
 	font-weight: bold;
 	grid-column-start: 2;
@@ -408,7 +408,7 @@ blockquote {
 
 /* Accent color */
 
-.personal-info-title, .cv-item-work-experience-position, .cv-item-life-philosophy-quote, .cv-item-education-subheading {
+.personal-info-title, .cv-item-work-experience-workplace, .cv-item-life-philosophy-quote, .cv-item-education-subheading {
 	/* color: #008cff; */
 	color: #d21404;
 }
@@ -463,7 +463,7 @@ body.dark-theme::-webkit-scrollbar-thumb {
     color: rgb(159, 150, 138);
 }
 
-.dark-theme .personal-info-title, .dark-theme .cv-item-work-experience-position, 
+.dark-theme .personal-info-title, .dark-theme .cv-item-work-experience-workplace, 
 .dark-theme .cv-item-life-philosophy-quote, .dark-theme .cv-item-education-subheading,
 .dark-theme .fas, .dark-theme .far {
     color: #fb493a;
