@@ -205,7 +205,7 @@ p {
 
 /* Skills */
 
-.cv-item-skills{
+.cv-item-skills {
 	display: grid;
     grid-template-columns: 50% 50%;
     padding-top: 3px;
@@ -331,6 +331,62 @@ blockquote {
 	grid-column-start: 2;
 }
 
+/* The dots and the pills are not meant to be selected */
+
+.cv-item-language-level-dots, .cv-item-skills-subitem-pills {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Toast Notification */
+
+#toast {
+	visibility: hidden;
+	min-width: 250px;
+	margin-left: -125px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	border-radius: 50px;
+	padding: 16px;
+	position: fixed;
+	z-index: 1;
+	left: 50%;
+	bottom: 30px;
+	font-size: 17px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#toast.show {
+	visibility: visible;
+	-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+	from {bottom: 0; opacity: 0;} 
+	to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+	from {bottom: 0; opacity: 0;}
+	to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+	from {bottom: 30px; opacity: 1;} 
+	to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+	from {bottom: 30px; opacity: 1;}
+	to {bottom: 0; opacity: 0;}
+}
+
 /* CV Footer */
 
 .cv-footer {
@@ -369,4 +425,55 @@ blockquote {
 
 .cv-item-heading { 
 	text-transform: uppercase;
+}
+
+/* Dark theme */
+
+body.dark-theme {
+    background-color: rgb(33, 36, 37);
+    color: #e8e6e3;
+}
+
+.dark-theme .container {
+	background-color: rgb(24, 26, 27);
+}
+
+body.dark-theme::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+
+body.dark-theme::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+
+body.dark-theme::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+
+.dark-theme .cv-item-work-experience-body, .dark-theme .cv-footer, .dark-theme .cv-item-life-philosophy-source {
+    color: rgb(192, 186, 178);
+}
+
+.dark-theme hr.cv-item-subitem-separator {
+    border-color: rgb(48, 52, 54) transparent transparent;
+}
+
+.dark-theme .cv-item-language-level-label {
+    color: rgb(159, 150, 138);
+}
+
+.dark-theme .personal-info-title, .dark-theme .cv-item-work-experience-position, 
+.dark-theme .cv-item-life-philosophy-quote, .dark-theme .cv-item-education-subheading,
+.dark-theme .fas, .dark-theme .far {
+    color: #fb493a;
+}
+
+.dark-theme .dot-full, .dark-theme .pill-full {
+    background-color: #a81003
+}
+
+body.dark-theme #toast {
+	background-color: rgb(192, 186, 178);;
+	color: #000;
 }
